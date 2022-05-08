@@ -6,6 +6,8 @@ import { Cart } from "./Components/Cart";
 import { Orders } from "./Components/Orders";
 import MyContextClass from "./MyContextClass";
 import Product from "./Components/Product";
+import { MyContext } from "./MyContextClass";
+import SpecificProduct from "./Components/SpecificProduct";
 class App extends Component {
     render() {
         return (
@@ -17,10 +19,12 @@ class App extends Component {
                         <Route path="/" element={<Products />}></Route>
                         <Route path='/cart' element={<Cart />}></Route>
                         <Route path='/orders' element={<Orders />}></Route>
-                        
-                        {/*items.map(item => (
+                        <MyContext.Consumer>
+                        {(items)=> items.map(item => (
                             <Route key={item.id} path={"/" + item.name.split(' ').join('')} element={<SpecificProduct id={item.id} name={item.name} price={item.price}></SpecificProduct>}></Route>
-                        ))*/}
+                        ))}
+                        </MyContext.Consumer>
+                        
                     </Routes>
                 </div>
             </MyContextClass>
