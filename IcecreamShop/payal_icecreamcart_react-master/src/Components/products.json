@@ -1,0 +1,27 @@
+{
+    "code": 200,
+    "response": {
+        "data": [
+            {
+                "price": 90,
+                "name": "Vanilla Icecream Scoop"
+            },
+            {
+                "price": 122,
+                "name": "ButterScotch Icebar"
+            },
+            {
+                "price": 80,
+                "name": "#795548 Icecream"
+            },
+            {
+                "price": 115,
+                "name": "PowderKeg Custord"
+            },
+            {
+                "price": 210,
+                "name": "Frozen Peanut Bar Icecream"
+            }
+        ]
+    }
+}
